@@ -87,7 +87,9 @@ numberOfRowsInComponent:(__unused NSInteger)component
       }
     }];
   }
-
+  pickerView.subviews[1].backgroundColor = [UIColor whiteColor];
+  pickerView.subviews[2].backgroundColor = [UIColor whiteColor];
+             
   label.font = _font;
 
   label.textColor = [RCTConvert UIColor:_items[row][@"textColor"]] ?: _color;
